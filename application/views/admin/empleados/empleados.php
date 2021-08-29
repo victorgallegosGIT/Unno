@@ -65,6 +65,51 @@
 var base_url = '<?php echo base_url(); ?>';
 
   /* AÑADIR CLIENTE */
+   /* ELIMINAR CLIENTE */
+
+  $('.deleteClienteBtn').on("click", function() {
+    let infoBotonCliente = $(this).val(),
+        infoEmpleado = infoBotonCliente.split("+"),
+        nombreEmpleado = infoEmpleado[1];
+    
+      Swal.fire({
+
+        title: 'Estás seguro de eliminar a '+nombreEmpleado+' ?',
+        text: "No podrás recuperar el registro!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#a9d86e',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Sí, eliminar ahora!',
+        cancelButtonText: 'Cancelar'
+        }).then((result) => {
+          if (result.value) {
+            var id_empleado = infoEmpleado[0];
+            $.ajax({
+                dataType:'json',
+                url:base_url+"empleados/empleados/deleteEmpleados/"+id_empleado,
+                success:function(resp){
+                  
+                  if(resp.success==true){
+                    Swal.fire(
+                      'Éxito!',
+                      `Has eliminado la información de ${nombreEmpleado}`,
+                      'success'
+                    )
+
+                    setTimeout("location.href='<?php echo base_url() ?>empleados/empleados'", 1500);
+                  }else{
+                    alert("ERROR!"); // falta meterle la animación de error!!
+                  }
+                }
+
+            }) // ajax
+                
+          }  //if promise
+
+        }); // promise
+
+  });
 
         
 

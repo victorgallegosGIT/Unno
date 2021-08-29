@@ -7,4 +7,8 @@ class empleados_models extends CI_Model {
 		$r = $this->db->query("SELECT * from empleados");
 		return $r->result();
 	}
+	public function delete($id){
+		$this->db->query("DELETE FROM empleados WHERE id_empleado = '$id'");
+		return true;
+	}
 }

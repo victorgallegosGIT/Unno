@@ -1,4 +1,4 @@
-ç<?php
+<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class empleados extends CI_Controller {
@@ -18,5 +18,15 @@ class empleados extends CI_Controller {
 		$this->load->view('layouts/asideNewDesign');
 		$this->load->view('admin/empleados/empleados', $data);
 		$this->load->view('layouts/footerNewDesign');
+	}
+	public function deleteEmpleados($id){
+
+		$data = array( 'success' => false );
+		
+		if($this->empleados_models->delete($id)){
+			$data['success'] = true;
+		}
+
+		echo json_encode($data);
 	}
 }
