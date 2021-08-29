@@ -1,0 +1,323 @@
+/* elementos */
+/*
+body {
+    background-color: #fff;
+    margin: 0 0;
+    font-family: 'Noto Sans JP', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6{ 
+	padding: 0 0; 
+	margin: 0 0;
+}
+
+th, td, thead, tr{
+	color: #ffffff;
+}
+
+i[class='fas fa-anchor']{
+	color: #ffffff;
+	font-size: 25px;
+	position: absolute;
+	right: 49.1%;
+	top: -2%;
+	font-weight: 1555;
+	z-index: 1111;
+}
+
+/* fin elementos */
+
+/* clases universales */
+/*
+.navigation__link:link,
+.navigation__link:visited {
+    display: flex;
+    flex: 1;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    color: #ffffff;
+    text-decoration: none;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ccc 90%);
+    background-size: 230%;
+    transition: all .3s;
+}
+
+.navigation__link:hover {
+    background-position: 100%;
+    color: #333;
+    box-shadow: 0 .2rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+button.btn{
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+.botonVerde{
+	display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+	background-color: #5cb85c;
+  	border-color: #4cae4c;
+  	color: #ffffff;
+}
+
+.btn-navBarLeft p{
+	float: left;
+	padding-left: 15px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+i.green{
+	padding: 0 0;
+	font-size: 15px;
+	color: green !important;
+	cursor: pointer;
+}
+
+i.f-right{
+	color: #ffffff; 
+	padding-right: 25px; 
+	float: right; 
+}
+
+/* clases barra de navegación principal */
+/*
+.navBar{ 
+	border-bottom: 1px solid #ffffff; 
+	width: 100%; 
+	height: 12vh; 
+	display: table;
+}
+
+.icon-navBar{ 
+	display: table-cell; 
+	vertical-align: middle;  
+}
+
+.navBar h3:first-of-type{ 
+	color: #ffffff; 
+	display: table-cell; 
+	vertical-align: middle; 
+	padding-left: 25px; 
+}
+
+/* fin clases barra de navegación principal */
+
+/*
+
+.container .content h3:first-of-type{ position: absolute; left: 45%; font-weight: 111; text-align: center; padding-top: 25px; color: #ffffff; }
+
+.container .content h3:first-of-type span{ color: #ffffff; }
+
+/*.container .content .box{ width: 50%; height: 75%; border-right: 1px solid #ffffff; margin: 25px 0;}*/
+/*
+.container .content .box{ width: 25%; position: absolute; top: 50%; left: 50%; color: #ffffff; 
+	margin: 25px -12.5%; border: 1px solid #ffffff; transform: rotate(90deg); 
+}
+
+/* navBar left */
+/*
+.navBarLeft{ background-color: #2A2A2A; width: 50px; height: 75vh; float: left; transition: .6s ease; }
+
+.navBarLeft:hover{ width: 250px; }
+
+.navBarLeft .icon-group .icon-g{ color: #fff; font-size: 19px; display: flex; justify-content: center; margin-top: 25px !important; }
+
+.navBarLeftFijo{ background-color: #2A2A2A; width: 250px; height: 75vh; float: left;}
+
+/* clientes navBar left */
+/*
+.navBarLeft:hover .icon-group .icon-g{
+ display: none; 
+}
+
+.navBarLeft .icon-group #clientes .test{
+ display: none; 
+}
+
+.navBarLeft:hover .icon-group #clientes .test{ 
+	display: flex;
+ 	flex: 1; 
+ 	justify-content: space-between;
+}
+
+.navBarLeft:hover .icon-group #clientes .test{
+	padding-top: 15px;
+}
+
+.navBarLeft:hover .icon-group #clientes a p.clientes-icon{
+ float: left;
+ color: #ffffff; 
+ padding-left: 15px; 
+ transition: .5s ease; 
+}
+
+.navBarLeft:hover .icon-group #clientes:hover .clientes-icon{
+ transform: scale(1.1); 
+}
+
+.navBarLeft:hover .icon-group #clientes a p.triangulo {
+	transition: .5s ease;
+    border-left: 12px solid #ffffff;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+	padding-right: 10px;
+}
+
+.navBarLeft:hover .icon-group #clientes:hover a p.triangulo{
+	transform: rotate(90deg) !important;
+	/*transform-origin: -45% 0% 225% !important;
+	transform-origin: left !important;
+	padding-right: 26px;
+}
+
+.navBarLeft .icon-group #clientes .testTwo{
+	display: none;
+}
+
+.navBarLeft:hover .icon-group #clientes:hover .testTwo{
+	display: flex;
+	flex-direction: column;
+}
+
+.navBarLeft:hover .icon-group #clientes:hover .testTwo button{
+	transition: .5s ease;
+	line-height: 1em;
+	font-size: 15px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.navBarLeft:hover .icon-group #clientes:hover .testTwo button:hover{
+	flex: 1;
+	background-color: #414141;
+}
+
+/* navBarLeft fijo 
+
+.navBarLeftFijo .icon-group i{
+	display: none;
+}
+
+.navBarLeftFijo .icon-group #clientes .test{
+	display: flex;
+	flex: 1;
+}
+
+.navBarLeftFijo .icon-group #clientes .test a{
+	padding-left: 15px;
+}
+
+.navBarLeftFijo .icon-group #clientes{
+	padding-top: 15px;
+}
+
+
+/* navBar right 
+
+.navBarRight{ background-color: #2A2A2A; width: 50px; height: 75vh; float: right; transition: .6s ease;}
+
+.navBarRight:hover{ width: 250px; }
+
+.navBarRight .icon-group{ color: #fff; font-size: 19px; display: flex; justify-content: center; margin-top: 25px; }
+
+.navBarRight:hover .icon-group{ display: none; }
+
+/* navBar right Valid Time 
+
+.navBarRight .validTime { display: none; }
+
+.navBarRight:hover .validTime { display: flex; flex-direction: column; color: #ffffff; }
+
+.navBarRight:hover .validTime h3, h4{ 
+	text-align: center;
+}
+
+.navBarRight:hover .validTime h4 p{
+	font-weight: 255;
+}
+
+.navBarRight:hover .validTime hr.corte{
+	width: 125px;
+	 
+}
+
+@keyframes titulo {
+	from {
+		top: 10%;
+		right:0px;
+	}
+	to{
+		top: 10%;
+		right: 25px;
+	}
+}
+
+.navBarRight:hover .validTime p.timing{ 
+	 
+	position: absolute;
+	animation-name: relojRegresivo; 
+	animation-duration: .7s;
+	transition: 1s ease;
+	top: 30%;
+	right: 25px;
+}
+
+@keyframes relojRegresivo {
+	from {
+		top: 30%;
+		right: -155px;
+	}
+	to{
+		top: 30%;
+		right: 25px;
+	}
+}
+
+
+
+/* footer 
+
+.footer{ border-top: 1px solid #ffffff; width: 100%; height: 12vh; display: table; }
+.footer .cite{ color: #ffffff; display: table-cell; vertical-align: middle; }
+.footer .cite cite{ float: right; padding-right: 25px; }
+.footer a { text-decoration: none; color: #ffffff; font-size: 19px; display: table-cell; vertical-align: middle; padding-left: 25px; }
+
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge 
+    color: #ffffff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 
+   color: #ffffff;
+   opacity: 1 /* esto es porque Firefox le reduce la opacidad por defecto ;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ 
+   color: #ffffff;
+   opacity:  1;
+}
+:-ms-input-placeholder {  Internet Explorer 10-11 
+   color: #ffffff;
+}
+
+input{
+	color: #ffffff;
+}*/

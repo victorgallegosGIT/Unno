@@ -1,0 +1,159 @@
+/*input{
+    border: none !important;
+    background-color: rgba(0, 0, 0, 0);
+    width: 85%;
+    border-bottom: 1px solid #fff !important;
+    margin-top: 15px;
+  }
+
+  input:focus{
+    outline: none !important;
+  }
+
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge 
+    color: #ffffff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 
+   color: #ffffff;
+   opacity: 1 /* esto es porque Firefox le reduce la opacidad por defecto ;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ 
+   color: #ffffff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 
+   color: #ffffff;
+}
+
+.capsula{
+	border: 1px solid #4B77D6;
+	border-radius: 15px;
+	background-color: #4B77D6;
+}
+
+.soga1{
+	position: absolute;
+	top: -36%;
+	left: 33%;
+	transform: rotateZ(78deg);
+	width: 5px;
+	height: 96%;
+	background: linear-gradient(to top, #2A2A2A 0%, #ffffff 100%);
+	box-shadow: 0px 3px 3px 1px rgb(42, 42, 42);
+}
+
+.soga{
+	position: absolute;
+	top: -36%;
+	right: 33%;
+	transform: rotateZ(102deg);
+	width: 5px;
+	height: 96%;
+	background: linear-gradient(to bottom, #2A2A2A 0%, #ffffff 100%);
+	box-shadow: 0px 3px 3px 1px rgb(42, 42, 42);
+}
+
+.tabla-oscura{
+	background-color: rgb(42, 42, 42);
+	box-shadow: 1px 15px 5px 15px rgb(42, 42, 42);
+}
+
+.tabla-celeste{
+	background-color: #4D6FB8;
+	border: 1px solid #ffffff;
+}
+
+.titulo{
+	padding-top: 35px;
+	padding-bottom: 15px;
+	color: #ffffff;
+}
+
+.d-none{
+	display: none;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.d-flex-complete{
+	display: flex;
+	flex: 1;
+}
+
+.flex-column{
+	justify-content: column;
+}
+
+.d-table{
+	display: table;
+}
+
+.d-middle-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+button.btn{
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+}
+
+i.green{
+	padding: 0 0;
+	font-size: 15px;
+	color: green !important;
+	cursor: pointer;
+}
+
+.f-right{
+	color: #ffffff; 
+	padding-right: 25px !important; 
+	float: right !important; 
+}
+
+/* container y content 
+
+.container{ 
+	margin-left: 50px !important;
+}
+
+.content2{ 
+	width: 90%;
+	height: 75vh;
+	display: flex;
+	float: right;
+}
+
+.content{
+	width: 100%;
+	height: 75vh;
+	display: fixed;
+	z-index: -1;
+}
+
+/* clases barra de navegación principal 
+
+.navBar{ 
+	border-bottom: 1px solid #ffffff; 
+	width: 100%; 
+	height: 12vh; 
+}
+
+.navBarFijo{ 
+	border-bottom: 1px solid #ffffff; 
+	width: 100%; 
+	height: 12vh; 
+}
+
+.icon-navBar h3:first-of-type{ 
+	color: #ffffff; 
+	display: table-cell; 
+	vertical-align: middle; 
+	padding-left: 25px; 
+}
+
+/* fin clases barra de navegación principal */
+
+
