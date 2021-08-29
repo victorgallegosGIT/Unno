@@ -39,9 +39,9 @@
                   </li>
 
                   <li class="sub-menu">
-                      <a href="<?php echo base_url() ?>clientes/clientes" >
+                      <a href="<?php echo base_url() ?>empleados/empleados" >
                           <i class="fa fa-user"></i>
-                          <span style="font-size: 15px; font-weight: 800;">Compras</span>
+                          <span style="font-size: 15px; font-weight: 800;">Empleados</span>
                       </a>
                   </li>
 
