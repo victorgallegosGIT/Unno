@@ -29,4 +29,33 @@ class empleados extends CI_Controller {
 
 		echo json_encode($data);
 	}
+
+	public function addCliente(){
+		$data = array(
+			'nombre_cliente' => $this->input->post('nombres'),
+			'telefono_cliente' => $this->input->post('telefono'),
+			'ciudad_cliente' => $this->input->post('ciudad'),
+			'direccion_cliente' => $this->input->post('direccion'),
+			'id_condicion_iva' => $this->input->post('condicion_iva'),
+			'cuit_cliente' => $this->input->post('cuit'),
+			'email_cliente' => $this->input->post('email'),
+		);
+
+		$valid = array( 'success' => false );
+
+		if($this->clientes_model->addCliente($data)){
+			$valid['success'] = true;
+		}
+
+		echo json_encode($valid);
+
+	}
+
+	public function selectClientToEdit($id){
+		$data = array(
+			'clientEditable' => $this->clientes_model->getCliente($id),
+		);
+
+		echo json_encode($data);
+	}
 }

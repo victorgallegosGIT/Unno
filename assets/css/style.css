@@ -17,6 +17,7 @@ body {
     padding: 0px !important;
     margin: 0px !important;
     font-size:15px;
+    overflow-x: hidden !important;
 }
 
 ul li {
@@ -1131,6 +1132,7 @@ PANELS CONFIGURATIONS
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 1em; 
   height: 250px;
+  
 }
 .stock .stock-chart {
   background: #00c5de;
@@ -2304,6 +2306,7 @@ i.ole{
 
 
 .btnUpdate{
+
     background-color: #EEE82E;
     padding: 5px !important;
     border: 1px solid #EEE82E;
@@ -2313,15 +2316,60 @@ i.ole{
 
 .btnUpdate i{
     color: #EEE82E;
+
 }
 
 .btnUpdate:hover{
     background-color: #E5C900;
     color: #ffffff;
+
 }
 
 .btnUpdate:hover i{
     color: #ffffff;
+}
+@keyframes es {
+  0% {
+    left: -200px;
+  }
+  25% {
+    left: -100px;
+    top: 50px;
+  }
+  50% {
+    left: 0px;
+    top: 75px;
+  }
+  75% {
+    left: 100px;
+    top: 100px;
+  }
+  100% {
+    left: 200px;
+    top: 100%;
+  }
+}
+@keyframes h1 {
+  0% {
+    left: -200px;
+  }
+  25% {
+    left: -100px;
+    top: 50px;
+  }
+  50% {
+    left: 0px;
+    top: 75px;
+  }
+  75% {
+    left: 100px;
+    top: 100px;
+  }
+  100% {
+    left: 200px;
+    top: 100%;
+    right: 100%;
+  }
 }
 
 .btnDelete{
@@ -2402,10 +2450,20 @@ ul.top-menu:hover > li a i{
     border-radius: 100%;
 }
 
+.add-icon{
+    border: 1px solid #FFDA33;
+    color: #FFDA38;
+}
+.add-Icon:hover {
+    background-color: #FFDA33;
+    border: 1px solid #FFDA33;
+    color: #ffffff;
+}
 .editIcon {
     border: 1px solid #FFDA33;
     color: #FFDA33;
 }
+
 
 .editIcon:hover {
     background-color: #FFDA33;
@@ -2447,4 +2505,19 @@ ul.top-menu:hover > li a i{
 .card-list {
     background-color: #17141d !important;
     box-shadow: -3rem 0 3rem #000;
+}
+
+.animacionD {
+    position: relative;
+    top: auto;
+    animation: deletear 2s linear;
+}
+
+@keyframes deletear {
+    from {
+        left: 20%;
+    }
+    to {
+        left:  500vh;
+    }
 }

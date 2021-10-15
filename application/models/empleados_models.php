@@ -11,4 +11,8 @@ class empleados_models extends CI_Model {
 		$this->db->query("DELETE FROM empleados WHERE id_empleado = '$id'");
 		return true;
 	}
+	public function addCliente($data){
+		$this->db->insert("clientes", $data);
+		return true;
+	}
 }

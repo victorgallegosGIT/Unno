@@ -12,7 +12,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-1 cards-father">
               <?php foreach($clientes as $cliente): ?>
                 <div class="col-md-2">
-                  <div class="card h-100 card-list">
+                  <div id="<?php echo $cliente->id_cliente; ?>" class="card h-100 card-list">
                     <div class="card-body">
                       <h5 class="card-title text-center text-info">
                         <?php echo $cliente->nombre_cliente; ?>
@@ -25,7 +25,7 @@
                       </center>
                       <div class="gap-1 row col-md-11 offset-md-1">
                           <div class="col-md-3 mt-4">
-                            <button class="btn btn-warning btnIcons editIcon editClienteBtn" type="button">
+                            <button class="btn btn-warning btnIcons btnUpdate editIcon editClienteBtn" type="button">
                               <i class="fa fa-pencil"></i>
                             </button>
                           </div>
@@ -37,7 +37,7 @@
                             </button>
                           </div>
                           <div class="col-md-3 mt-4">
-                            <button class="btn btn-danger btnIcons delIcon deleteClienteBtn"
+                            <button class="btn btn-danger btnIcons delIcon deleteClienteBtn "
                                     value="<?php echo $cliente->id_cliente; ?>+<?php echo $cliente->nombre_cliente; ?>" 
                                     type="button">
                               <i class="fa fa-trash"></i>
@@ -343,12 +343,10 @@ function saveDataCliente(idCliente){
                 success:function(resp){
                   
                   if(resp.success==true){
-                    Swal.fire(
-                      'Éxito!',
-                      `Has eliminado la información de ${nombreCliente}`,
-                      'success'
-                    )
-
+                    $(`#${id_cliente}`).addClass('animacionD');
+                    /**
+                    
+                    **/
                     setTimeout("location.href='<?php echo base_url() ?>clientes/clientes'", 1500);
                   }else{
                     alert("ERROR!"); // falta meterle la animación de error!!
