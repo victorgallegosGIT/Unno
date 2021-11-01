@@ -34,28 +34,31 @@
         <h1 class="u-align-center u-text u-text-custom-color-1 u-title u-text-1">UNNO<br>
         </h1>
         <p class="u-align-center u-large-text u-text u-text-variant u-text-2">Computers</p>
-        
+
+
+           <form action="<?php echo base_url();?>auth/login" method="post">
         	<h2 class="u-align-center u-text u-text-3">Ingreso</h2>
         	<div class="u-align-center u-border-3 u-border-custom-color-1 u-line u-line-horizontal u-line-1"></div>
           <form action="#" method="POST" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 50px;" source="custom" name="form">
           	<div style="margin: auto">
           		<div class="username">
-		            <input class="u-border-3 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-1" type="text" placeholder="Username" required="">
+		            <input  class="u-border-3 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-1" type="text" placeholder="Username" name="username" required="">
 		            <i class="fa fa-user"></i>
 		        </div>
 		        <div class="password">
-		            <input class="u-border-3 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-1" type="password" placeholder="Password" required="">
+		            <input class="u-border-3 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle u-input-1" type="password" placeholder="Password" name="password" required="">
 		            <i class="fa fa-key"></i>
 		        </div>
+            </form>
 		        <center>
               <a href="<?php echo base_url() ?>clientes/clientes">
 		        	 <button class="btn-submit" type="button" id="btnIngresar">INGRESAR</button>
               </a>
 		        </center>
 		    </div>
+          </form> 
 
-
-          </form>
+          
         <!-- </div> -->
       </div>
     </section>

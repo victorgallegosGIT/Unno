@@ -20,6 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		redirect(base_url()."dashboard");
+		$this->load->view('admin/dashboard');
+		$this->load->view('layouts/aside');
+		$this->load->view('layouts/footer');
+		$this->load->view('layouts/header');
 	}
 }
+
+//redirect(base_url()."dashboard");
